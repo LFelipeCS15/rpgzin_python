@@ -51,20 +51,23 @@ def jornada():
     print("Você se aproxima do balcão, onde um taverneiro corpulento e com um tapa-olho limpa um copo de vidro com um pano duvidoso. \nOlhando ao redor, algumas coisas chamam a sua atenção, um quadro com vários papéis, o que aparenta ser uma briga entre \naventureiros e uma figura misteriosa no canto da taverna que aparentemente está com a atenção direcionada a você. \n\nVocê precisa decidir qual será o seu primeiro passo no Reino de Vale.")
     escolha_taverna()
 
-def escolha_taverna()
+def escolha_taverna():
     print("\nO que você fará agora?")
     print("1 - Analisar o Quadro de Avisos")
-    print("2 - onversar com o Taverneiro")
+    print("2 - Conversar com o Taverneiro")
     print("3 - Abordar a Figura Misteriosa")
     print("4 - Intervir na Confusão")
     escolha = input("> ")
 
     if escolha == "1":
-        print("Você senta num banco no balcão, joga uma moeda na madeira para pedir uma bebida e decide puxar \nassunto com o taverneiro caolho. Ele parece conhecer todo mundo que entra e sai daqui.")
-        print("\nTaverneiro - Hm? Eu nunca vi seu rosto por aqui, por acaso é novo na cidade?")
+        print("")
+        print("")
         print("\n")
     elif escolha == "2":
-        print("")
+        print("Você senta num banco no balcão, joga uma moeda na madeira para pedir uma bebida e decide puxar \nassunto com o taverneiro caolho. Ele parece conhecer todo mundo que entra e sai daqui.")
+        print("\nTaverneiro - Hm? Eu nunca vi seu rosto por aqui, por acaso é novo na cidade?")
+        print("\nVocê afirma que sim para ele.")
+        
     elif escolha == "3":
         print("")
     elif escolha == "4":
