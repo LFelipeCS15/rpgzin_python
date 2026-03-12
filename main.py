@@ -12,42 +12,46 @@ def escolha_classe():
         classe = "Guerreiro"
         print(f"\n{nome}, você escolheu o caminho do Guerreiro!")
         print("")
-        print("Iniciando a jornada do Guerreiro...")
+        print(f"Iniciando a jornada de {nome} o Guerreiro...")
         print("")
-        jornada(classe)
+        return classe
     elif classe == "2":
         classe = "Mago"
         print(f"\n{nome}, você escolheu o caminho do Mago!")
         print("")
-        print("Iniciando a jornada do Mago...")
+        print(f"Iniciando a jornada de {nome} o Mago...")
         print("")
-        jornada(classe)
+        return classe
     elif classe == "3":
         classe = "Arqueiro"
         print(f"\n{nome}, você escolheu o caminho do Arqueiro!")
         print("")
-        print("Iniciando a jornada do Arqueiro...")
+        print(f"Iniciando a jornada de {nome} o Arqueiro...")
         print("")
-        jornada(classe)
+        return classe
     elif classe == "4":
         classe = "Ladino"
         print(f"\n{nome}, você escolheu o caminho do Ladino!")
         print("")
-        print("Iniciando a jornada do Ladino...")
+        print(f"Iniciando a jornada de {nome} o Ladino...")
         print("")
-        jornada(classe)
+        return classe
     else:
         print("Classe inválida. Tente novamente.")
         escolha_classe()
 
-def jornada(classe):
+def jornada():
     print("Você a muito tempo sonha em se tornar um aventuiro.")
     print("Se aventurar por terras desconhecidas, enfrentar monstros e descobrir tesouros.")
     print(f"Por isso você treinou para se tornar um {classe} e finalmente ir em sua jornada.")
-    print("Você se encontra nos portões do Reino de Vale, um reino conhecido por ser o Reino dos Aventureiros.")
-    print("Um reino cheio de pessoas de diversas raças vindas de diversos lugares.")
-    print("Um reino cheio de guildas e comercios, onde você pode encontrar tudo o que precisa para sua jornada.")
+    print("Você se encontra nos portões do Reino de Vale, conhecido por ser o Reino dos Aventureiros.")
+    print("Um reino cheio de pessoas de diversas raças, vindas de diversos lugares.")
+    print("Cheio de guildas e comercios, onde você pode encontrar tudo o que precisa para sua jornada.")
+    print("")
+    print("Você entra pelos portões olhando em volta, vendo a movimentação das pessoas, as lojas, as guildas, os bares e as tavernas.")
+    print("Você se sente animado e pronto para começar sua aventura, mas antes de sair para explorar o reino, você decide ir até a taverna \nmais próxima para descansar e se preparar para o que está por vir.")
 
 if __name__ == "__main__":
     nome = input("Digite seu nome, aventureiro: ")
-    escolha_classe()
+    classe = escolha_classe()
+    jornada()
